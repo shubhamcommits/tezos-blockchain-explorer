@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 // NgxUI Loader Configuration
 import { ngxUiLoaderConfig } from 'src/app/config/ngx-ui-loader.config'
 
@@ -31,7 +33,9 @@ import { NgxUiLoaderModule, NgxUiLoaderHttpModule } from 'ngx-ui-loader';
     // NGX UI HTTP Request Loader Module
     NgxUiLoaderHttpModule
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
