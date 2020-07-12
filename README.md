@@ -1,6 +1,11 @@
-# TezosBlockchainExplorer
+# Tezos Blockchain Explorer
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
+
+## Build server
+
+1. Run `npm install` to install all the dependencies.
+2. Run `npm run dev` to build and start the application at port 3000.
 
 ## Development server
 
